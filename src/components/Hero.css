@@ -1,0 +1,276 @@
+.hero-main-section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at center, #ffffff89, transparent 40%),
+    linear-gradient(180deg, #09090b 0%, #0a0a0a 35%, #050505 100%);
+}
+
+
+.hero-name-div{
+  width: 100%;
+  height: fit-content;
+  padding: 0px 5% 0px 5%;
+  position: relative;
+  top: 180px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.hero-name-div span{
+  color: #f4f4f5;
+}
+
+.hero-name-flex{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.hero-design-that-speaks{
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+.hero-role {
+  width: 100%;
+  height: fit-content;
+  font-size: 140px;
+  font-weight: bolder;
+  position: relative;
+  top: 150px;
+  text-align: center;
+  z-index: 0;
+}
+
+.hero-role p,
+.hero-role p span {
+  background: linear-gradient(to bottom, #fb923c 0%, #f97316 45%, #fdba74 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.hero-my-image{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+
+.hero-my-image img{
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-contact-div{
+  width: 100%;
+  height: fit-content;
+  padding: 0px 5% 0px 5%;
+  position: relative;
+  top: 25%;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-git-link{
+  width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-git-link span{
+  color: white;
+  margin: 0px 5%;
+}
+
+.hero-webdev-app-dev{
+  color: #fb923c;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.hero-discription{
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  top: 30%;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-discription p{
+  width: 82%;
+  height: fit-content;
+  color: #d4d4d8;
+  text-indent:4rem;
+  font-weight: 400;
+  font-style: normal;
+}
+
+ .hero-cursor-1{
+  width: fit-content;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .hero-cursor-2{
+  width: fit-content;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .hero-git-icon{
+  font-size: 25px;
+ }
+
+ .hero-linkedin-icon{
+  font-size: 25px;
+} 
+#linkedin{
+  color: rgb(71, 182, 255);
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 1024px) {
+  .hero-name-div {
+    top: 130px;
+  }
+  .hero-role {
+    font-size: clamp(70px, 9vw, 110px);
+    top: 100px;
+  }
+  .hero-contact-div {
+    top: 18%;
+  }
+  .hero-discription {
+    top: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-name-div {
+    top: 100px;
+    padding: 0 6%;
+  }
+  .hero-design-that-speaks {
+    font-size: 22px;
+  }
+  .hero-name-div span {
+    font-size: 14px;
+  }
+  .hero-design-that-speaks span {
+    font-size: 22px;
+  }
+  .hero-role {
+    font-size: clamp(48px, 8vw, 75px);
+    top: 75px;
+  }
+  .hero-my-image img {
+    width: 90%;
+    height: 60%;
+    object-fit: contain;
+  }
+  .hero-contact-div {
+    top: 12%;
+    padding: 0 6%;
+  }
+  .hero-webdev-app-dev {
+    font-size: 24px;
+  }
+  .hero-git-link span {
+    margin: 0px 8px;
+    font-size: 14px;
+  }
+  .hero-git-icon, .hero-linkedin-icon {
+    font-size: 20px;
+  }
+  .hero-discription {
+    top: 14%;
+  }
+  .hero-discription p {
+    width: 88%;
+    text-indent: 2.5rem;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-name-div {
+    top: 80px;
+    padding: 0 4%;
+  }
+  .hero-design-that-speaks {
+    font-size: 18px;
+  }
+  .hero-name-div span {
+    font-size: 12px;
+  }
+  .hero-design-that-speaks span {
+    font-size: 18px;
+  }
+  .hero-role {
+    font-size: clamp(34px, 10vw, 48px);
+    top: 55px;
+  }
+  .hero-my-image img {
+    width: 95%;
+    height: 50%;
+    object-fit: contain;
+  }
+  .hero-contact-div {
+    top: 8%;
+    padding: 0 4%;
+  }
+  .hero-webdev-app-dev {
+    font-size: 18px;
+  }
+  .hero-git-link span {
+    margin: 0px 4px;
+    font-size: 12px;
+  }
+  .hero-git-icon,
+  .hero-linkedin-icon {
+    font-size: 16px;
+  }
+  .hero-discription {
+    top: 10%;
+  }
+  .hero-discription p {
+    width: 92%;
+    text-indent: 1.5rem;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+}
+
+.hero-my-image-animation{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
