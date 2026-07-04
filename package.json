@@ -1,9 +1,12 @@
 {
+  "homepage": "https://Mohan41204.github.io/Portfolio-for-Freelancing",
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
@@ -32,6 +35,7 @@
     "eslint": "^10.5.0",
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.3",
+    "gh-pages": "^6.3.0",
     "globals": "^17.6.0",
     "tailwindcss": "^4.3.2",
     "typescript": "^6.0.3",
