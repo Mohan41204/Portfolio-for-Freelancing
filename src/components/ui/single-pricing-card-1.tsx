@@ -20,7 +20,7 @@ function whatsappHref(planName: string, planPrice: string) {
 
 export function Pricing() {
   return (
-    <section className="relative min-h-screen overflow-hidden bg-zinc-950 py-24 md:py-28">
+    <section className="relative min-h-fit overflow-hidden bg-zinc-950 py-24 md:py-28">
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,140,0,0.08),transparent_55%)]" />
 
       <div id="pricing" className="relative mx-auto w-full max-w-6xl space-y-5 px-4 md:px-6">
@@ -36,8 +36,8 @@ export function Pricing() {
               Simple Pricing
             </div>
           </div>
-          <h2 className="mt-5 text-center text-2xl font-bold tracking-tighter text-white md:text-3xl lg:text-4xl">
-            Plans That{" "}
+          <h2 className="mt-5 text-center text-2xl font-bold tracking-tighter text-white md:text-3xl lg:text-4xl whitespace-nowrap">
+            <span className="text-white">Plans That </span>
             <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text font-semibold text-transparent">
               Fit Your Budget
             </span>
@@ -98,7 +98,7 @@ export function Pricing() {
 
                     <div className="relative z-10 space-y-1">
                       <div className="flex items-center justify-between gap-2">
-                        <h3 className="font-semibold leading-none text-white">
+                        <h3 className="font-semibold leading-none text-white text-sm sm:text-base">
                           {plan.name}
                         </h3>
                         {badge && (

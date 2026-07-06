@@ -1,4 +1,4 @@
-import profileImg from "../assets/Gemini_Generated_Image_ae6hz1ae6hz1ae6h-Picsart-BackgroundRemover.png";
+import profileImg from "../assets/my-image.png";
 import "./Hero.css";
 import BlurText from "./Reactbits/BlurText";
 import SplitText from "./Reactbits/SplitText";

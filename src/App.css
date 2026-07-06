@@ -128,7 +128,7 @@
 .nav__toggle span {
   width: 24px;
   height: 2px;
-  background: var(--text-strong);
+  background: #ffffff;
   border-radius: 2px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }

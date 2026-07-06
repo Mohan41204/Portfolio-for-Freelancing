@@ -9,7 +9,7 @@ import {
   ArrowUpRight,
 } from "lucide-react";
 import { profile } from "../data";
-import contactBgImage from "../assets/downloaded-file-ezgif.com-video-to-gif-converter (1).gif";
+import contactBgImage from "../assets/contact-page-bg.webm";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
@@ -83,15 +83,17 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="relative overflow-hidden bg-zinc-950 py-24 md:py-28"
+      className="relative overflow-hidden bg-zinc-950 h-fit py-10 md:py-10"
     >
       {/* Vertical landscape background (horizontal image rotated for tall section) */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
-        <img
+        <video
           src={contactBgImage}
-          alt=""
-          aria-hidden="true"
-          className="absolute left-1/2 top-1/2 h-[168vh] w-[220vh] max-w-none -translate-x-1/2 -translate-y-1/2 rotate-0 object-cover opacity-[0.22]"
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 h-full w-full object-cover opacity-[0.22]"
         />
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_0%,rgba(255,140,0,0.1),transparent_55%)]" />
         <div className="absolute inset-0 bg-gradient-to-b from-zinc-950/55 via-zinc-950/88 to-zinc-950" />
@@ -127,9 +129,9 @@ export default function Contact() {
           <motion.h2
             variants={fadeUp}
             custom={1}
-            className="text-4xl leading-[100%] text-white sm:text-5xl xl:text-6xl"
+            className="text-4xl leading-[100%] text-white sm:text-5xl xl:text-6xl whitespace-nowrap"
           >
-            Start Your{" "}
+            <span className="text-white">Start Your </span>
             <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text font-semibold text-transparent">
               Next Project
             </span>

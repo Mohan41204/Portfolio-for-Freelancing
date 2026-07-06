@@ -1,21 +1,19 @@
 import { useRef } from "react";
 import { Check } from "lucide-react";
 import { services } from "@/data";
-import { ProgressiveBlur } from "@/components/ui/progressive-blur";
+
 import { TimelineContent } from "@/components/ui/timeline-animation";
 
 const revealVariants = {
   visible: (i) => ({
     y: 0,
     opacity: 1,
-    filter: "blur(0px)",
     transition: {
-      delay: i * 0.4,
+      delay: i * 0.15,
       duration: 0.5,
     },
   }),
   hidden: {
-    filter: "blur(10px)",
     y: -20,
     opacity: 0,
   },
@@ -54,11 +52,11 @@ export default function ServicesSection() {
             animationNum={2}
             timelineRef={timelineRef}
             customVariants={revealVariants}
-            className="text-4xl leading-[100%] text-white sm:text-5xl xl:text-6xl 2xl:text-7xl"
+            className="text-4xl leading-[100%] text-white sm:text-5xl xl:text-6xl 2xl:text-7xl whitespace-nowrap"
           >
-            Services I{" "}
+            <span className="text-white">Services </span>
             <span className="bg-gradient-to-r from-orange-400 to-orange-600 bg-clip-text font-semibold text-transparent">
-              Provide
+              I Provide
             </span>
           </TimelineContent>
 
@@ -97,10 +95,7 @@ export default function ServicesSection() {
 
               <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
 
-              <ProgressiveBlur
-                className="pointer-events-none absolute bottom-0 left-0 h-[55%] w-full"
-                blurIntensity={0.5}
-              />
+
 
               <div className="absolute inset-x-0 bottom-0 z-10 p-5 sm:p-6">
                 <div className="mb-3 flex items-center gap-2">

@@ -1,5 +1,8 @@
 // Central place for all portfolio content.
 // Edit values here to update the whole site.
+import web from "./assets/web-development.avif"
+import app from "./assets/app-development.avif"
+import backend from "./assets/backend-development.avif"
 
 export const profile = {
   name: "Mohankumar U",
@@ -62,8 +65,7 @@ export const services = [
   {
     icon: "🌐",
     title: "Web Development",
-    imgSrc:
-      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=800&auto=format&fit=crop",
+    imgSrc: web,
     description:
       "Responsive, high-performance websites and web apps built with React — clean code, fast loading, and pixel-perfect on every device.",
     features: [
@@ -76,8 +78,7 @@ export const services = [
   {
     icon: "📱",
     title: "App Development",
-    imgSrc:
-      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format&fit=crop",
+    imgSrc: app,
     description:
       "Cross-platform mobile apps with Flutter and native Android with Android Studio — one codebase, Android & iOS ready.",
     features: [
@@ -90,8 +91,7 @@ export const services = [
   {
     icon: "🚀",
     title: "Backend & Deployment",
-    imgSrc:
-      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=800&auto=format&fit=crop",
+    imgSrc: backend,
     description:
       "Robust backends with Node.js & Python, PostgreSQL databases, and automated cloud deployment with Docker & CI/CD.",
     features: [
